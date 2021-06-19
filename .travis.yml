@@ -10,7 +10,9 @@ git:
 script: 
   - yarn test
 notifications:
-  slack: ---
+  slack: 
+    secure: 
+      # "CÓDIGO ENCRIPTADO"
   email: 
     recipients: 
       - fermartorr01@gmail.com
@@ -20,7 +22,9 @@ deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 4d3d8fe4-8457-417a-96a0-992c0f8d8b01
+  api_key:
+    secure: 
+      # "CÓDIGO ENCRIPTADO"
   app: platzi-store-backend-fermin
   on:
     repo: FerminMartin/platzi-store-backend
